@@ -31,11 +31,11 @@ jobs:
      steps:
        - name: Ceckout source code
          uses: actions/checkout@v4
-       - name:
+       - name: Setup Terraform with specified version on the runner
          uses: hashicorp/setup-terraform@v3
        - name: Terraform init
          id: init
-         run: terraform init -bavkend-config="bucket=$BUCKET_TF_STATE"
+         run: terraform init -backend-config="bucket=$BUCKET_TF_STATE"
        - name: Terraform format
          id: fmt
          run: terraform fmt -check
