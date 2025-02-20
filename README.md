@@ -1,6 +1,6 @@
 # Terraform code 
 
-## Maintain vpc & eks with terraform for vprofile project
+## Maintain vpc & eks with terraform for Ecommerce project
 
 ## Tools required
 Terraform version 1.6.3
